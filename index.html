@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TarjimCall — Translated calls on any Android phone</title>
+<meta name="description" content="TarjimCall translates a live conversation between two phones. Speech is recognized and translated on the device, and the text is encrypted end-to-end.">
+<style>
+  :root{
+    --brand:#0F766E; --brand-2:#0D9488; --green:#16A34A;
+    --ink:#0F172A; --muted:#475569; --line:#E2E8F0; --bg:#F4F8F7; --card:#FFFFFF;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans Arabic",sans-serif;
+    line-height:1.7; font-size:17px;
+  }
+  .wrap{max-width:880px;margin:0 auto;padding:0 20px}
+  header{background:linear-gradient(135deg,var(--brand) 0%,var(--brand-2) 100%);color:#fff;padding:56px 0 48px}
+  .brand{display:flex;align-items:center;gap:16px;margin-bottom:22px}
+  .logo{width:60px;height:60px;border-radius:14px;background:#fff;display:flex;align-items:center;justify-content:center;flex:0 0 auto}
+  .logo svg{width:38px;height:38px}
+  h1{margin:0;font-size:34px;letter-spacing:-.02em}
+  .tag{margin:0;opacity:.9;font-size:15px}
+  .lead{font-size:21px;margin:0 0 26px;max-width:640px;opacity:.97}
+  .cta{display:inline-block;background:#fff;color:var(--brand);font-weight:700;text-decoration:none;
+       padding:13px 26px;border-radius:999px;font-size:16px}
+  .cta.ghost{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.6);margin-inline-start:10px}
+  main{padding:44px 0 20px}
+  h2{font-size:23px;margin:0 0 18px;color:var(--brand)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-bottom:44px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px}
+  .card h3{margin:0 0 8px;font-size:17px}
+  .card p{margin:0;color:var(--muted);font-size:15.5px}
+  .dot{width:34px;height:34px;border-radius:10px;background:#CCFBF1;color:var(--brand);
+       display:flex;align-items:center;justify-content:center;font-size:18px;margin-bottom:12px}
+  section.block{margin-bottom:44px}
+  .note{background:#CCFBF1;border:1px solid #99F6E4;color:#115E59;border-radius:14px;padding:18px 20px;font-size:15.5px}
+  footer{border-top:1px solid var(--line);padding:26px 0 40px;color:var(--muted);font-size:15px}
+  footer a{color:var(--brand);font-weight:600;text-decoration:none}
+  footer a:hover{text-decoration:underline}
+  .frow{display:flex;gap:18px;flex-wrap:wrap;align-items:center}
+  a{color:var(--brand)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <div class="logo" aria-hidden="true">
+        <svg viewBox="0 0 108 108" xmlns="http://www.w3.org/2000/svg">
+          <path d="M14 26h80a6 6 0 0 1 6 6v40a6 6 0 0 1-6 6H50L30 94V78h-16a6 6 0 0 1-6-6V32a6 6 0 0 1 6-6z" fill="#0F766E"/>
+          <path d="M31 46h22l-6-8h6l10 12-10 12h-6l6-8H31z" fill="#16A34A"/>
+          <path d="M77 62H55l6 8h-6L45 58 55 46h6l-6 8h22z" fill="#CCFBF1"/>
+        </svg>
+      </div>
+      <div>
+        <h1>TarjimCall</h1>
+        <p class="tag">Translated calls on any Android phone</p>
+      </div>
+    </div>
+    <p class="lead">Two people speak different languages. Each one talks normally — and hears the other's words translated, spoken aloud on their own phone.</p>
+    <a class="cta" href="#how">How it works</a>
+    <a class="cta ghost" href="./privacy.html">Privacy Policy</a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <section class="block" id="how">
+      <h2>How it works</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="dot">1</div>
+          <h3>Call by phone number</h3>
+          <p>Dial the other person's number. Their phone rings through a push notification, even if TarjimCall is closed.</p>
+        </div>
+        <div class="card">
+          <div class="dot">2</div>
+          <h3>Speak naturally</h3>
+          <p>Your phone recognizes your speech on the device and translates it on the device. Nothing is uploaded as audio.</p>
+        </div>
+        <div class="card">
+          <div class="dot">3</div>
+          <h3>Hear the translation</h3>
+          <p>The other phone shows the text in their language and speaks it aloud. Both directions work at the same time.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="block">
+      <h2>Built around privacy</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="dot">&#128274;</div>
+          <h3>End-to-end encryption</h3>
+          <p>Recognized text is sealed with a fresh key generated per call. The relay server only ever sees ciphertext.</p>
+        </div>
+        <div class="card">
+          <div class="dot">&#9881;</div>
+          <h3>On-device processing</h3>
+          <p>Speech recognition and translation run locally on your phone. No conversation audio is stored anywhere.</p>
+        </div>
+        <div class="card">
+          <div class="dot">&#127760;</div>
+          <h3>20 languages</h3>
+          <p>The whole interface is translated into 20 languages, including full right-to-left support for Arabic.</p>
+        </div>
+        <div class="card">
+          <div class="dot">&#128247;</div>
+          <h3>No ads, no tracking</h3>
+          <p>No advertising SDKs and no analytics trackers are included in the app.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="block">
+      <h2>Availability</h2>
+      <div class="note">
+        <strong>TarjimCall is in pre-release testing.</strong><br>
+        Store listings and a direct download link will be posted on this page. Both phones in a call need the app installed — TarjimCall does not translate ordinary cellular calls to a phone without it.
+      </div>
+    </section>
+
+    <section class="block">
+      <h2>Developer</h2>
+      <p>Benabdelkader Sebti &nbsp;·&nbsp; <a href="mailto:benabdelkader506@gmail.com">benabdelkader506@gmail.com</a></p>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap frow">
+    <span>© 2026 Benabdelkader Sebti — TarjimCall</span>
+    <a href="./privacy.html">Privacy Policy</a>
+    <a href="mailto:benabdelkader506@gmail.com">Contact</a>
+  </div>
+</footer>
+
+</body>
+</html>

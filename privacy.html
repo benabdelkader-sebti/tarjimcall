@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — TarjimCall</title>
+<meta name="description" content="TarjimCall privacy policy. On-device speech recognition and on-device translation, end-to-end encrypted text relay.">
+<style>
+  :root{
+    --brand:#0F766E; --brand-2:#0D9488; --ink:#0F172A; --muted:#475569;
+    --line:#E2E8F0; --bg:#F4F8F7; --card:#FFFFFF;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans Arabic",sans-serif;
+    line-height:1.75; font-size:17px;
+  }
+  header{background:linear-gradient(135deg,var(--brand) 0%,var(--brand-2) 100%);color:#fff;padding:40px 20px 32px}
+  .wrap{max-width:760px;margin:0 auto}
+  h1{margin:0 0 6px;font-size:30px;letter-spacing:-.02em}
+  .sub{margin:0;opacity:.92;font-size:15px}
+  .bar{display:flex;gap:8px;margin-top:20px;flex-wrap:wrap}
+  .bar button{
+    font:inherit;font-size:14px;cursor:pointer;padding:7px 16px;border-radius:999px;
+    border:1px solid rgba(255,255,255,.55);background:rgba(255,255,255,.12);color:#fff;
+  }
+  .bar button[aria-pressed="true"]{background:#fff;color:var(--brand);border-color:#fff;font-weight:600}
+  main{padding:32px 20px 56px}
+  section.doc{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:28px 26px}
+  h2{font-size:19px;margin:30px 0 8px;color:var(--brand)}
+  h2:first-of-type{margin-top:0}
+  p{margin:0 0 14px}
+  .eff{display:inline-block;background:#CCFBF1;color:#115E59;font-size:14px;font-weight:600;
+       padding:5px 14px;border-radius:999px;margin-bottom:22px}
+  ul{margin:0 0 14px;padding-inline-start:22px}
+  li{margin-bottom:7px}
+  a{color:var(--brand);font-weight:600}
+  .contact{margin-top:26px;padding-top:20px;border-top:1px solid var(--line);font-size:16px}
+  footer{padding:0 20px 44px;text-align:center;color:var(--muted);font-size:14px}
+  [hidden]{display:none !important}
+  html[dir="rtl"] body{font-size:18px}
+  html[dir="rtl"] section.doc{padding:28px 26px}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>TarjimCall</h1>
+    <p class="sub" data-en="Privacy Policy" data-ar="سياسة الخصوصية">Privacy Policy</p>
+    <div class="bar">
+      <button type="button" id="btn-en" aria-pressed="true" onclick="setLang('en')">English</button>
+      <button type="button" id="btn-ar" aria-pressed="false" onclick="setLang('ar')">العربية</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+<!-- ============================ ENGLISH ============================ -->
+<section class="doc" id="doc-en">
+  <span class="eff">Effective date: 2026-10-05</span>
+
+  <h2>1. How TarjimCall works</h2>
+  <p>TarjimCall turns your speech into text on your own device with Android Speech Recognition, and translates it on the device with Google ML Kit. During a call the recognized text is encrypted end-to-end with an ephemeral per-call key before it is relayed between the two phones.</p>
+
+  <h2>2. The signaling relay</h2>
+  <p>The signaling relay does not receive plaintext conversation text and does not store translated messages.</p>
+
+  <h2>3. Data we process</h2>
+  <p>The service processes your phone number, your optional display name and your Firebase Cloud Messaging token to register the account, find other users and deliver incoming-call notifications. Optional contact matching sends only normalized phone-number digits.</p>
+
+  <h2>4. Permissions the app requests</h2>
+  <ul>
+    <li><strong>Microphone</strong> — required, to recognize your speech during a call.</li>
+    <li><strong>Contacts</strong> — optional, requested only when you tap "Find my contacts". Only digits are sent, to check which contacts already use TarjimCall. Contact names never leave your device unless a number matches.</li>
+    <li><strong>Notifications</strong> — to ring for incoming calls, including when the app is closed.</li>
+    <li><strong>Internet access</strong> — to reach the signaling relay.</li>
+  </ul>
+  <p>TarjimCall does not read your SMS, does not place cellular calls, and does not access your camera, location or files.</p>
+
+  <h2>5. Data sharing and retention</h2>
+  <p>We do not sell conversation data. Crash reports stay on your device unless you explicitly export them. Account data is kept only as long as needed to route calls and can be deleted on request.</p>
+
+  <h2>6. Service providers</h2>
+  <p>Google Firebase Cloud Messaging, Google ML Kit, Android Speech Recognition and Cloudflare Workers.</p>
+
+  <h2>7. Children</h2>
+  <p>TarjimCall is not directed to children under 13 and we do not knowingly collect their data.</p>
+
+  <h2>8. Changes to this policy</h2>
+  <p>If this policy changes materially, the effective date above will be updated and the change will be reflected in the app.</p>
+
+  <div class="contact">
+    <p><strong>Developer:</strong> Benabdelkader Sebti<br>
+    <strong>Contact:</strong> <a href="mailto:benabdelkader506@gmail.com">benabdelkader506@gmail.com</a></p>
+  </div>
+</section>
+
+<!-- ============================ ARABIC ============================ -->
+<section class="doc" id="doc-ar" hidden>
+  <span class="eff">تاريخ السريان: 2026-10-05</span>
+
+  <h2>١. كيف يعمل TarjimCall</h2>
+  <p>يحوّل TarjimCall كلامك إلى نص على جهازك باستخدام التعرف على الكلام في Android، وتتم الترجمة على الجهاز باستخدام Google ML Kit. أثناء المكالمة يُشفَّر النص المتعرَّف عليه من طرف إلى طرف بمفتاح مؤقت خاص بالمكالمة قبل تمريره بين الهاتفين.</p>
+
+  <h2>٢. وسيط الإشارات</h2>
+  <p>وسيط الإشارات لا يستقبل نص المحادثة بصيغته الواضحة ولا يخزن الرسائل المترجمة.</p>
+
+  <h2>٣. البيانات التي نعالجها</h2>
+  <p>تعالج الخدمة رقم هاتفك واسمك الاختياري ورمز Firebase الخاص بإشعارات المكالمات، من أجل إنشاء الحساب والعثور على المستخدمين الآخرين وإيصال إشعارات المكالمات الواردة. ميزة مطابقة جهات الاتصال الاختيارية لا ترسل سوى أرقام هواتف مطبَّعة.</p>
+
+  <h2>٤. الأذونات التي يطلبها التطبيق</h2>
+  <ul>
+    <li><strong>الميكروفون</strong> — إلزامي، للتعرف على كلامك أثناء المكالمة.</li>
+    <li><strong>جهات الاتصال</strong> — اختياري، يُطلب فقط عند الضغط على «العثور على جهات اتصالي». لا تُرسل سوى الأرقام لمعرفة أيّ جهات الاتصال تستخدم TarjimCall فعلًا. أسماء جهات الاتصال لا تغادر جهازك إلا إذا تطابق رقم ما.</li>
+    <li><strong>الإشعارات</strong> — للرنين عند ورود مكالمة، حتى والتطبيق مغلق.</li>
+    <li><strong>الوصول إلى الإنترنت</strong> — للاتصال بوسيط الإشارات.</li>
+  </ul>
+  <p>TarjimCall لا يقرأ رسائلك النصية، ولا يجري مكالمات عبر الشبكة الخلوية، ولا يصل إلى الكاميرا أو الموقع أو الملفات.</p>
+
+  <h2>٥. مشاركة البيانات والاحتفاظ بها</h2>
+  <p>لا نبيع بيانات المحادثات. تبقى تقارير الأعطال على جهازك ما لم تقم بتصديرها صراحة. تُحتفظ ببيانات الحساب طالما كانت لازمة لتوجيه المكالمات ويمكن طلب حذفها.</p>
+
+  <h2>٦. مزوّدو الخدمة</h2>
+  <p>Google Firebase Cloud Messaging وGoogle ML Kit والتعرف على الكلام في Android وCloudflare Workers.</p>
+
+  <h2>٧. الأطفال</h2>
+  <p>TarjimCall غير موجَّه للأطفال دون سنّ ١٣، ولا نجمع بياناتهم عن علم.</p>
+
+  <h2>٨. تغييرات هذه السياسة</h2>
+  <p>إذا تغيّرت هذه السياسة تغيّرًا جوهريًا، فسيُحدَّث تاريخ السريان أعلاه وسينعكس التغيير داخل التطبيق.</p>
+
+  <div class="contact">
+    <p><strong>المطوّر:</strong> بن عبد القادر سبتي (Benabdelkader Sebti)<br>
+    <strong>للتواصل:</strong> <a href="mailto:benabdelkader506@gmail.com">benabdelkader506@gmail.com</a></p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span data-en="© 2026 Benabdelkader Sebti — TarjimCall" data-ar="© 2026 بن عبد القادر سبتي — TarjimCall">© 2026 Benabdelkader Sebti — TarjimCall</span>
+    &nbsp;·&nbsp; <a href="./index.html" data-en="Home" data-ar="الرئيسية">Home</a>
+  </div>
+</footer>
+
+<script>
+function setLang(l){
+  var html=document.documentElement;
+  html.lang=l; html.dir=(l==='ar')?'rtl':'ltr';
+  document.getElementById('doc-en').hidden=(l!=='en');
+  document.getElementById('doc-ar').hidden=(l!=='ar');
+  document.getElementById('btn-en').setAttribute('aria-pressed', l==='en');
+  document.getElementById('btn-ar').setAttribute('aria-pressed', l==='ar');
+  document.title=(l==='ar')?'سياسة الخصوصية — TarjimCall':'Privacy Policy — TarjimCall';
+  var els=document.querySelectorAll('[data-en]');
+  for(var i=0;i<els.length;i++){ els[i].textContent=els[i].getAttribute('data-'+l); }
+  try{ localStorage.setItem('tc-lang',l); }catch(e){}
+}
+(function(){
+  var saved=null;
+  try{ saved=localStorage.getItem('tc-lang'); }catch(e){}
+  var nav=(navigator.language||'en').slice(0,2).toLowerCase();
+  setLang(saved || (nav==='ar'?'ar':'en'));
+})();
+</script>
+</body>
+</html>
